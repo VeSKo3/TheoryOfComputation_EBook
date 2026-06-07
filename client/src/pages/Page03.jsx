@@ -1,3 +1,5 @@
+import React from 'react';
+import image1 from '../assets/DFA_string_ending_with_b.png';
 export default function Page03() {
   return (
     <article className="toc-page">
@@ -43,12 +45,13 @@ export default function Page03() {
 
         <h3>Example Target Language</h3>
         <p>
-          Build a DFA over {'{0, 1}'} that accepts strings ending with 01.
+          Build a DFA over {'{a, b}'} that accepts strings ending with b.
         </p>
 
         <div className="toc-callout">
           <p>
-            You can model this with three states: start, seen-0, and seen-01 (accepting).
+            You can model this with 2 states: q0 and q1 (accepting).
+            <img src={image1} alt="diagram of dfa"/>
           </p>
         </div>
 
